@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NameRankings</title>
+    <style>
+        #selectionCounter {
+            position: fixed; /* Fixed positioning to place it relative to the viewport */
+            top: 10px; /* 10px from the top */
+            left: 10px; /* 10px from the left */
+            background-color: #f8f8f8; /* Light grey background */
+            border: 1px solid #ddd; /* Light grey border */
+            padding: 5px 10px; /* Padding around the text */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Slight shadow for some depth */
+        }
+
+        body {
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center-align items horizontally */
+            padding-top: 100px; /* Add some space at the top */
+            margin: 0; /* Remove default margin */
+            background-color: #f0f0f0; /* Light grey background */
+            min-height: 100vh; /* Ensure it covers at least the full height of the viewport */
+        }
+
+        #rankingList ol {
+    list-style-type: none; /* Removes the default list-style numbers */
+    padding-left: 0;      /* Adjusts padding to align with the content area */
+}
+
+        .button-container {
+            display: flex; /* Apply flexbox layout */
+            justify-content: center; /* Center the buttons horizontally */
+            gap: 50px; /* Add some space between the buttons */
+        }
+
+        button {
+            padding: 20px 40px; /* Add some padding */
+            font-size: 20px; /* Increase font size */
+            margin: 10px; /* Add some space between buttons */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            border-radius: 5px; /* Add rounded corners */
+            transition: background-color 0.3s; /* Smooth transition for background color */
+        }
+
+        button:hover {
+            background-color: #007bff; /* Change color on hover */
+            color: white; /* Change text color on hover */
+        }
+
+        #rankingList {
+            margin-top: 20px; /* Ensure there's space between buttons and the list */
+            width: 100%; /* Optional: Adjust width as needed */
+            text-align: center; /* Center-align the list text */
+        }
+
+        ul {
+            list-style-type: none; /* Remove default list styling */
+            padding: 0; /* Remove default padding */
+        }
+
+        li {
+            margin: 5px 0; /* Add some space between list items */
+        }
+    </style>
+</head>
+<body>
+    <div id="selectionCounter">
+        Selections: <span id="counterDisplay">0</span>
+    </div>
+
+    <!-- Button container for horizontal layout -->
+    <div class="button-container">
+        <button id="button1">Button 1</button>
+        <button id="button2">Button 2</button>
+    </div>
+    
+    <div id="rankingList" style="margin-top: 50px;">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
