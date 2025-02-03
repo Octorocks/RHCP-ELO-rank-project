@@ -13,22 +13,18 @@ Every selection increments a persistent counter stored in `selectionCount.txt`. 
 - **`linkedListFunctions.js`** – Source file for most of the necessary functions.
 - **`eloRatings.js`** – Handles the logic of changing the ELO score, like in chess.
 
-## Setup Instructions
-
 
 ## Persistence
 - **`rankedSongs.json`** retains song rankings between sessions.
 - **`selectionCount.txt`** ensures selection counts persist across restarts.
 
 ## Future Improvements
-- Display selection count on the frontend.
-- Implement additional ranking metrics.
-- Add support for multiple users.
+- Display selection count on the frontend onload.
+- Embed to eddbrisley.com to democratise input
 
 ---
 
 ### Notes
-This project uses a simple text file to track selections instead of a database for lightweight persistence. If scaling is needed, consider moving to SQLite or MongoDB.
-
-🚀 Happy ranking!
+This project uses a simple text file to track selections and a JSON file for the ranks, instead of a database for lightweight persistence.
+If I have to, should be straightforward to move to a proper scale database structure.
 
