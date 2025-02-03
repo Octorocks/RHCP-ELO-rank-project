@@ -7,7 +7,7 @@ const app = express();
     const selectionCountPath = './selectionCount.txt'; 
 
 
-// Bring. Back. My. Functions 💅
+// Bring. Back. My. Functions
 const { arrayToLinkedList, printLinkedList, sortLinkedListByElo, updateRankedSongsFile } = require('./linkedListFunctions.js');
 const { updateEloRating } = require('./eloRatings.js');
 
