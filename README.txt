@@ -6,11 +6,12 @@ Every selection increments a persistent counter stored in `selectionCount.txt`. 
 
 ## File Structure
 - **`main.js`** – The Express.js backend server.
+- **`userComparison.html`** – Super simple html file for allowing users to compare tracks. 
 - **`app.js`** – The frontend script handling song selection.
-- **`rankedSongs.json`** – Stores song rankings and ELO ratings.
+- **`rankedSongs.json`** – contains all RHCP songs, and their current rank as of upload.
 - **`selectionCount.txt`** – Tracks the number of selections made.
-- **`linkedListFunctions.js`** – Handles linked list operations.
-- **`eloRatings.js`** – Handles ELO rating calculations.
+- **`linkedListFunctions.js`** – Source file for most of the necessary functions.
+- **`eloRatings.js`** – Handles the logic of changing the ELO score, like in chess.
 
 ## Setup Instructions
 
